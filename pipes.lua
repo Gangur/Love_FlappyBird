@@ -52,7 +52,7 @@ function Pipes:update()
         self:draw()
     end ]]
     
-    if(bird.location.x > self.X and bird.location.x < self.X + 52)  then
+    if(bird.location.x > self.X - 78 and bird.location.x < self.X)  then
         if(bird.location.y > self.Y - self.span/2 and bird.location.y < self.Y + self.span/2) then
             if (self.flag) then
                 score.count = score.count + 1
